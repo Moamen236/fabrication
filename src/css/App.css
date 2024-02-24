@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  position: relative;
+  background-color: #7f2c26;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-weight: bold;
+}
+
+p,
+label,
+a,
+button,
+input,
+textarea,
+select,
+option,
+li,
+ul,
+ol,
+table,
+thead,
+tbody,
+tr,
+td,
+th,
+div,
+span {
+  font-weight: 400;
+}
+
+.slide-in {
+  position: fixed;
+  top: 16%;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(28, 64, 84, 0.9);
+  transform-origin: bottom;
+  z-index: 99999999;
+}
+
+.slide-out {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(28, 64, 84, 0.9);
+  transform-origin: top;
+  z-index: 99999999;
+}
+
+p, li {
+  line-height: 1.5;
+  font-size: 0.9vw;
+}
+
+#video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+li::marker {
+  color: #e73b47;
+}
+
+button:focus-visible{
+  outline: none;
+}
