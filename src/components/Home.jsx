@@ -35,7 +35,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="py-[2.1vw]">
+            <div className="py-[2.1vw] h-screen">
                 <div className="flex flex-row justify-center items-center w-full">
                     <div className="container">
                         <div className="content">
@@ -139,14 +139,22 @@ const Home = () => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 1.5, duration: 0.5 }}
                                 >
-                                    <button data-modal-target="pdf-presentation" data-modal-toggle="pdf-presentation" >
+                                    <Link to={'/full-brochure'} onClick={handleClick}>
+                                        <div className="image w-[16.2vw] mx-auto">
+                                            <motion.img
+                                                src={process.env.PUBLIC_URL + '/assets/images/home/full-brochure.gif'} className='w-full' alt=""
+                                                whileTap={{ scale: 1.1 }}
+                                            />
+                                        </div>
+                                    </Link>
+                                    {/* <button data-modal-target="pdf-presentation" data-modal-toggle="pdf-presentation" >
                                         <div className="image w-[15vw] mx-auto">
                                             <motion.img
                                                 src={process.env.PUBLIC_URL + '/assets/images/home/full-brochure.gif'} className='w-full' alt=""
                                                 whileTap={{ scale: 1.1 }}
                                             />
                                         </div>
-                                    </button>
+                                    </button> */}
                                 </motion.div>
                             </motion.div>
                         </div>

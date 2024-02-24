@@ -96,3 +96,8 @@ li::marker {
 button:focus-visible{
   outline: none;
 }
+canvas{
+  margin: auto;
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -6,6 +6,7 @@ import WhyFabric from './components/WhyFabric';
 import Advantages from './components/Advantages';
 import Suspension from './components/Suspension';
 import Dispersion from './components/Dispersion';
+import FullBrochure from './components/FullBrochure';
 
 function App() {
   const location = useLocation();
@@ -22,6 +23,7 @@ function App() {
           <Route path="/advantages-of-fabricAir" element={<Advantages />} />
           <Route path="/suspension-types" element={<Suspension />} />
           <Route path="/dispersion-types" element={<Dispersion />} />
+          <Route path="/full-brochure" element={<FullBrochure />} />
         </Routes>
       </AnimatePresence>
     </>
