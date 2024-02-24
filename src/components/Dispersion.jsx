@@ -2,10 +2,11 @@ import React from 'react';
 import Navbar from '../Shared/Navbar';
 import { motion } from 'framer-motion';
 import { TextAnimation } from '../Shared/TextAnimation';
+import InactivityDetector from '../Shared/InactivityDetector';
 
 const Dispersion = () => {
   return (
-    <>
+    <InactivityDetector>
       <Navbar />
       <div className="overflow-hidden">
         <div className="header py-[2vw]">
@@ -174,7 +175,7 @@ const Dispersion = () => {
           </div>
         </div>
       </div>
-    </>
+    </InactivityDetector>
   )
 }
 

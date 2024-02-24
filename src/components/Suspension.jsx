@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion';
 import { TextAnimation } from '../Shared/TextAnimation';
 import Navbar from '../Shared/Navbar';
+import InactivityDetector from '../Shared/InactivityDetector';
 
 const Suspension = () => {
     const [activeTab, setActiveTab] = useState('styled-type-1');
@@ -10,7 +11,7 @@ const Suspension = () => {
         setActiveTab(tabId);
     };
     return (
-        <>
+        <InactivityDetector>
             <Navbar />
             <div className="overflow-hidden">
                 <div className="header py-[2vw]">
@@ -61,7 +62,7 @@ const Suspension = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </InactivityDetector>
     )
 }
 

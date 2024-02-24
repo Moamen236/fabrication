@@ -7,6 +7,19 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import "../node_modules/flowbite/dist/flowbite.min.js";
 // import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(registration => {
+        // console.log('Service Worker registered: ', registration);
+      })
+      .catch(error => {
+        // console.log('Service Worker registration failed: ', error);
+      });
+  });
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

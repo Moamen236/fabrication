@@ -2,10 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { TextAnimation } from '../Shared/TextAnimation';
 import Navbar from '../Shared/Navbar';
+import InactivityDetector from '../Shared/InactivityDetector';
 
 const Advantages = () => {
   return (
-    <>
+    <InactivityDetector>
       <Navbar />
       <div className="overflow-hidden">
         <div className="header py-[2vw]">
@@ -105,7 +106,7 @@ const Advantages = () => {
           </div>
         </div>
       </div>
-    </>
+    </InactivityDetector>
   )
 }
 

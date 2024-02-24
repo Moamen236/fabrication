@@ -2,10 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { TextAnimation } from '../Shared/TextAnimation';
 import Navbar from '../Shared/Navbar';
+import InactivityDetector from '../Shared/InactivityDetector';
 
 function WhyFabric() {
   return (
-    <>
+    <InactivityDetector>
       <Navbar />
       <div className="overflow-hidden">
         <div className="header py-[2vw]">
@@ -98,7 +99,7 @@ function WhyFabric() {
           </div>
         </div>
       </div>
-    </>
+    </InactivityDetector>
   )
 }
 
