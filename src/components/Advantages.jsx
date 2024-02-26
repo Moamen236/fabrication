@@ -12,7 +12,7 @@ const Advantages = () => {
         <div className="header py-[2vw]">
           <TextAnimation el="h1" className='text-white text-[2.4vw] text-center font-bold' text={'Advantages of FabricAir<sup>®</sup>'} />
         </div>
-        <div className="content bg-second opacity-80 h-[calc(100vh-7.6vw)]">
+        <div className="content bg-second opacity-90 h-[calc(100vh-7.6vw)]">
           <div className="flex flex-col justify-between items-start w-full">
             <div className="container">
               <div className="flex flex-row justify-between items-center my-[2vw]">
@@ -28,7 +28,7 @@ const Advantages = () => {
                   <div className="pl-[3vw]">
                     <div className="mb-[1.4vw]">
                       <motion.h5
-                        className='text-[1.2vw] text-main-400 mb-[0.4vw]'
+                        className='text-[1.2vw] text-main mb-[0.4vw]'
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.5, duration: 0.5 }}
@@ -46,7 +46,7 @@ const Advantages = () => {
                     </div>
                     <div className="mb-[1.4vw]">
                       <motion.h5
-                        className='text-[1.2vw] text-main-400 mb-[0.4vw]'
+                        className='text-[1.2vw] text-main mb-[0.4vw]'
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.7, duration: 0.5 }}
@@ -65,7 +65,7 @@ const Advantages = () => {
                     </div>
                     <div className="mb-[1.4vw]">
                       <motion.h5
-                        className='text-[1.2vw] text-main-400 mb-[0.4vw]'
+                        className='text-[1.2vw] text-main mb-[0.4vw]'
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1, duration: 0.5 }}
@@ -83,7 +83,7 @@ const Advantages = () => {
                     </div>
                     <div className="mb-[1.4vw]">
                       <motion.h5
-                        className='text-[1.2vw] text-main-400 mb-[0.4vw]'
+                        className='text-[1.2vw] text-main mb-[0.4vw]'
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 1, duration: 0.5 }}

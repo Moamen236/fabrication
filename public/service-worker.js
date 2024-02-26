@@ -43,7 +43,6 @@ const urlsToCache = [
     '/assets/images/suspension/12.png',
     '/assets/images/suspension/012.png',
     '/assets/images/suspension/013.png',
-    '/assets/images/suspension/013.png',
 
 
     '/assets/images/why-fabric/footer.png',

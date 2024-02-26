@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import { TextAnimation } from '../Shared/TextAnimation';
 import Navbar from '../Shared/Navbar';
@@ -27,7 +27,7 @@ const Suspension = () => {
                                     {[1, 2, 3, 4, 5, 6, 7, 8, 11, '11A', 12, 13].map(tabNum => (
                                         <li className="me-2" key={`type-${tabNum}-tab`} role="presentation">
                                             <button
-                                                className={`w-[15vw] inline-block p-[0.7vw] border-b-2 ${activeTab === `styled-type-${tabNum}` ? 'text-main-500 hover:text-main border-main-500 font-bold bg-white' : 'hover:text-white-600 hover:border-white-300'}`}
+                                                className={`w-[15vw] inline-block p-[0.7vw] border-b-2 ${activeTab === `styled-type-${tabNum}` ? 'text-main hover:text-main border-main font-bold bg-white' : 'hover:text-white-600 hover:border-white-300'}`}
                                                 id={`type-${tabNum}-styled-tab`}
                                                 onClick={() => handleTabClick(`styled-type-${tabNum}`)}
                                                 type="button" role="tab" aria-controls={`type-${tabNum}`} aria-selected={activeTab === `styled-type-${tabNum}`}

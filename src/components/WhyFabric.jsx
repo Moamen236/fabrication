@@ -12,7 +12,7 @@ function WhyFabric() {
         <div className="header py-[2vw]">
           <TextAnimation el="h1" className='text-white text-[2.4vw] text-center font-bold' text={'Why Fabric'} />
         </div>
-        <div className="content bg-second opacity-80 h-[calc(100vh-7.6vw)]">
+        <div className="content bg-second opacity-90 h-[calc(100vh-7.6vw)]">
           <div className="flex flex-col justify-between items-start w-full">
             <div className="container">
               <div className="flex flex-row justify-between items-center my-[2vw]">

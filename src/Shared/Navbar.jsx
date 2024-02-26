@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <>
             <motion.div
-                className="fixed top-8 -left-[0.5vw] z-20"
+                className="fixed top-[1.8vw] -left-[0.5vw] z-20"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
