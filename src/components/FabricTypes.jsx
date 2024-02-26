@@ -7,7 +7,7 @@ import InactivityDetector from '../Shared/InactivityDetector';
 
 const FabricTypes = () => {
     return (
-        <>
+        <InactivityDetector>
             <Navbar />
             <div className="overflow-hidden">
                 <div className="header py-[2vw]">
@@ -171,7 +171,7 @@ const FabricTypes = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </InactivityDetector>
     )
 }
 

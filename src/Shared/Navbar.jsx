@@ -11,7 +11,7 @@ const Navbar = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 0.5 }}
             >
-                <img src={process.env.PUBLIC_URL + '/assets/images/flag.gif'} className="w-[6vw]" />
+                <img src={process.env.PUBLIC_URL + '/assets/images/flag.gif'} className="w-[6vw]" alt=''/>
             </motion.div>
 
             <Link to={'/'}>
@@ -21,7 +21,7 @@ const Navbar = () => {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 0.5, duration: 0.5 }}
                 >
-                    <img src={process.env.PUBLIC_URL + '/assets/images/home.png'} className="w-[2vw]" />
+                    <img src={process.env.PUBLIC_URL + '/assets/images/home.png'} className="w-[2vw]" alt=''/>
                 </motion.div>
             </Link >
         </>
